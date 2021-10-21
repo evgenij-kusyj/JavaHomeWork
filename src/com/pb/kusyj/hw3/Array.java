@@ -24,7 +24,7 @@ public class Array {
         System.out.println("Количество положительных элементов: " + y);
 
         Arrays.sort(array);
-            System.out.print("Элементы с положительным значением:");
+            System.out.println("Элементы с положительным значением: ");
             for (int i = 0; i < array.length; i++) {
                 if (array[i] > 0) {
                     System.out.println(" " + array[i]);
