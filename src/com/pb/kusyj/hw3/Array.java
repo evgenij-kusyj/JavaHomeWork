@@ -31,17 +31,17 @@ public class Array {
                 }
             }
 
-        boolean isSorted = false;
-        int buf;
-        while(!isSorted) {
-            isSorted = true;
+        boolean sorted = false;
+        int z;
+        while(!sorted) {
+            sorted = true;
             for (int i = 0; i < array.length-1; i++) {
                 if(array[i] > array[i+1]){
-                    isSorted = false;
+                    sorted = false;
 
-                    buf = array[i];
+                    z = array[i];
                     array[i] = array[i+1];
-                    array[i+1] = buf;
+                    array[i+1] = z;
                 }
             }
         }
