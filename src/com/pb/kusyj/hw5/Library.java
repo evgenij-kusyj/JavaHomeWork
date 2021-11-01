@@ -40,10 +40,10 @@ public class Library {
         reader2.takeBook();
         reader3.takeBook();
 
-        reader1.takeBook(reader1.nameFIO); // выводит строку из класса Reader, добавляя соответствующего читателя
-        reader2.takeBook(reader2.nameFIO);
-        reader3.takeBook(reader3.nameFIO);
-        reader1.takeBook(reader2.nameFIO); // если указаны разные читатели в начале строки и в скобках,
+        reader1.takeBook(reader1.nameFIO, "3"); // выводит строку из класса Reader, добавляя соответствующего читателя
+        reader2.takeBook(reader2.nameFIO, "3");
+        reader3.takeBook(reader3.nameFIO, "3");
+        reader1.takeBook(reader2.nameFIO, "3"); // если указаны разные читатели в начале строки и в скобках,
                                             // выдаст имя из скобок
 
         reader1.takeBook(reader1.nameFIO, book1.getTitle(), book2.getTitle(), book3.getTitle()); //
@@ -52,7 +52,7 @@ public class Library {
                 book2.getTitle(), book2.getBookAuthor(), book2.getYearOfIssue(),
                 book3.getTitle(), book3.getBookAuthor(), book3.getYearOfIssue());
 
-        reader1.returnBook(reader1.nameFIO);
+        reader1.returnBook(reader1.nameFIO, "3");
         reader1.returnBook(reader1.nameFIO, book1.getTitle(), book2.getTitle(), book3.getTitle());
         reader1.returnBook(reader1.nameFIO, book1.getTitle(), book1.getBookAuthor(), book1.getYearOfIssue(),
                 book2.getTitle(), book2.getBookAuthor(), book2.getYearOfIssue(),

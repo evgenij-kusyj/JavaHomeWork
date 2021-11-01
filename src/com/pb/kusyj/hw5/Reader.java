@@ -12,8 +12,10 @@ public class Reader {
         System.out.println("[" + nameFIO + " взял 3 книги]"); // передает строку в класс Library
     }
 
-    public void takeBook(String nameFIO) {       // метод берет ФИО соответствующего читателя(reader1,2,3)
-        System.out.println("\"" + nameFIO + " взял 3 книги\""); // передает строку в класс Library
+    public void takeBook(String nameFIO, String... numbers) { // метод берет ФИО соответствующего читателя(reader1,2,3)
+        for (String number1: numbers) {
+            System.out.println("\"" + nameFIO + " взял "+number1+ " книги\"");
+        }
     }
 
     public void takeBook(String nameFIO, String title, String title1, String title2) { // будут выводиться 3 переменные с названием книги
@@ -28,8 +30,8 @@ public class Reader {
                 +title2+" ("+bookAuthor2 + yearOfIssue2+")\"");
     }
 
-    public void returnBook(String nameFIO) {
-        System.out.println("\"" + nameFIO + " вернул 3 книги\"");
+    public void returnBook(String nameFIO, String number) {
+        System.out.println("\"" + nameFIO + " вернул "+number+ " книги\"");
     }
 
     public void returnBook(String nameFIO, String title, String title1, String title2) { // будут выводиться 3 переменные с названием книги
