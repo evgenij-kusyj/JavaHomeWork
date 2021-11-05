@@ -1,26 +1,34 @@
 package com.pb.kusyj.hw5;
 
 public class Book {
-   private String title;                   // название
-    private String bookAuthor;              // автор книги
-    private int yearOfIssue;                // год издания
+    private String title;
+    private String author;
+    private int year;
+
+    public Book(String title, String author, int year) {
+        this.title = title;
+        this.author = author;
+        this.year = year;
+        }
 
     public String getTitle() {
         return title;
     }
-    public void setBookAuthor(String bookAuthor) {
-        this.bookAuthor = bookAuthor;
-    }
     public void setTitle(String title) {
         this.title = title;
     }
-    public String getBookAuthor() {
-        return bookAuthor;
+
+    public String getAuthor() {
+        return author;
     }
-    public int getYearOfIssue() {
-        return yearOfIssue;
+    public void setAuthor(String author) {
+        this.author = author;
     }
-    public void setYearOfIssue(int yearOfIssue) {
-        this.yearOfIssue = yearOfIssue;
+
+    public int getYear() {
+        return year;
+    }
+    public void setYear(int year) {
+        this.year = year;
     }
 }

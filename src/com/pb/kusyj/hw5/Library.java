@@ -2,68 +2,33 @@ package com.pb.kusyj.hw5;
 import java.util.Scanner;
 public class Library {
     public static void main(String[] args) {
-        Book book1 = new Book();
-        Book book2 = new Book();
-        Book book3 = new Book();
+        Book[] books = new Book[3];
+        books[0] = new Book("Приключения", "Иванов И.И.", 2000);
+        books[1] = new Book("Словарь", "Сидоров А.В.", 1980);
+        books[2] = new Book("Энциклопедия", "Гусев К.В.", 2010);
 
-        book1.setTitle ("Приключения");
-        book1.setBookAuthor("Иванов И.И.");
-        book2.setTitle("Словарь");
-        book2.setBookAuthor("Сидоров А.В.");
-        book3.setTitle("Энциклопедия");
-        book3.setBookAuthor("Гусев К.В.");
-        book1.setYearOfIssue( 2000 );
-        book2.setYearOfIssue( 1980 );
-        book3.setYearOfIssue( 2010 );
+        Reader[] readers = new Reader[25];
+        readers[0] = new Reader("Петров В.В.", 123456, "Экономический факультет",
+                " 01.01.1990", "0981111111");
+        readers[1] = new Reader("Коршунов О.И.", 223456, "Математический факультет",
+                "02.02.1995", "0631111111");
+        readers[2] = new Reader("Орловский Р.П.", 323456, "Юридический факультет", "03.03.2000", "0501111111");
 
-        Reader reader1 = new Reader();
-        Reader reader2 = new Reader();
-        Reader reader3 = new Reader();
+        for (int i = 0; i < 3; i++) {
+            System.out.println(books[i].getTitle() + ", " + books[i].getAuthor() + ", " + books[i].getYear());
+        }
+        for (int o = 0; o < 3; o++) {
+            System.out.println(readers[o].getNameFIO() + ", " + readers[o].getDateOfBirth() + ", " + readers[o].getLibraryCard() +
+                    ", " + readers[o].getFaculty() + ", " + readers[o].getPhone());
+        }
 
-        reader1.nameFIO = "Петров В.В.";
-        reader2.nameFIO = "Коршунов О.И.";
-        reader3.nameFIO = "Орловский Р.П.";
-        reader1.faculty = "Экономический факультет";
-        reader1.phone = "0981111111";
-        reader1.libraryCard =  123456 ;
-        reader1.dateOfBirth = " 01.01.1990";
-        reader2.faculty = "Математический факультет";
-        reader2.phone = "0631111111";
-        reader2.libraryCard =  223456 ;
-        reader2.dateOfBirth = "02.02.1995";
-        reader3.faculty = "Юридический факультет";
-        reader3.phone = "0501111111";
-        reader3.libraryCard =  323456 ;
-        reader3.dateOfBirth = "03.03.2000";
+        int bookCount = 3;
+        readers[0].takeBook(bookCount);
+        readers[1].takeBook(books[0].getTitle(), books[1].getTitle(),books[2].getTitle()); //
+        readers[1].takeBook(books[2], books[1], books[0]);
 
-        reader1.takeBook(); // выводит строку из класса Reader, добавляя соответствующего читателя
-        reader2.takeBook();
-        reader3.takeBook();
-
-        reader1.takeBook(reader1.nameFIO, "3"); // выводит строку из класса Reader, добавляя соответствующего читателя
-        reader2.takeBook(reader2.nameFIO, "3");
-        reader3.takeBook(reader3.nameFIO, "3");
-        reader1.takeBook(reader2.nameFIO, "3"); // если указаны разные читатели в начале строки и в скобках,
-                                            // выдаст имя из скобок
-
-        reader1.takeBook(reader1.nameFIO, book1.getTitle(), book2.getTitle(), book3.getTitle()); //
-
-        reader1.takeBook(reader1.nameFIO, book1.getTitle(), book1.getBookAuthor(), book1.getYearOfIssue(),
-                book2.getTitle(), book2.getBookAuthor(), book2.getYearOfIssue(),
-                book3.getTitle(), book3.getBookAuthor(), book3.getYearOfIssue());
-
-        reader1.returnBook(reader1.nameFIO, "3");
-        reader1.returnBook(reader1.nameFIO, book1.getTitle(), book2.getTitle(), book3.getTitle());
-        reader1.returnBook(reader1.nameFIO, book1.getTitle(), book1.getBookAuthor(), book1.getYearOfIssue(),
-                book2.getTitle(), book2.getBookAuthor(), book2.getYearOfIssue(),
-                book3.getTitle(), book3.getBookAuthor(), book3.getYearOfIssue());
-
-        System.out.println(reader1.nameFIO+", "+reader1.libraryCard+", "+reader1.faculty+", "+reader1.dateOfBirth+", "+reader1.phone);
-        System.out.println(reader2.nameFIO+", "+reader2.libraryCard+", "+reader2.faculty+", "+reader2.dateOfBirth+", "+reader2.phone);
-        System.out.println(reader3.nameFIO+", "+reader3.libraryCard+", "+reader3.faculty+", "+reader3.dateOfBirth+", "+reader3.phone);
-
-        System.out.println(book1.getTitle()+", "+book1.getBookAuthor()+", "+book1.getYearOfIssue());
-        System.out.println(book2.getTitle()+", "+book2.getBookAuthor()+", "+book2.getYearOfIssue());
-        System.out.println(book3.getTitle()+", "+book3.getBookAuthor()+", "+book3.getYearOfIssue());
+        readers[0].returnBook(bookCount);
+        readers[1].returnBook(books[0].getTitle(), books[1].getTitle(), books[2].getTitle()); //
+        readers[2].returnBook(books[0], books[1],books[2]);
     }
 }
