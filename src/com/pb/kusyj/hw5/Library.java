@@ -22,12 +22,11 @@ public class Library {
                     ", " + readers[o].getFaculty() + ", " + readers[o].getPhone());
         }
 
-        int bookCount = 3;
-        readers[0].takeBook(bookCount);
+        readers[0].takeBook(2);
         readers[1].takeBook(books[0].getTitle(), books[1].getTitle(),books[2].getTitle()); //
-        readers[1].takeBook(books[2], books[1], books[0]);
+        readers[2].takeBook(books[2], books[1], books[0]);
 
-        readers[0].returnBook(bookCount);
+        readers[0].returnBook(3);
         readers[1].returnBook(books[0].getTitle(), books[1].getTitle(), books[2].getTitle()); //
         readers[2].returnBook(books[0], books[1],books[2]);
     }
