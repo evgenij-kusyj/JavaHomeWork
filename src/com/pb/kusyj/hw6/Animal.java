@@ -21,6 +21,11 @@ public class Animal {
         this.location = location;
     }
 
+    // специально для приема у ветеринара. Метод будет переопределен в каждом животном
+    public void name() {
+        System.out.print("");
+    }
+
     public void makeNoise() {
         System.out.print( "Говорит. ");
     }
@@ -43,5 +48,13 @@ public class Animal {
     @Override
     public int hashCode() {
         return Objects.hash(food, location);
+    }
+
+    @Override
+    public String toString() {
+        return "Animal{" +
+                "food='" + food + '\'' +
+                ", location='" + location + '\'' +
+                '}';
     }
 }

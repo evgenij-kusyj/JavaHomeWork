@@ -11,7 +11,7 @@ public class Cat extends Animal {
     private String typeOfAnimals; // = "Кот";
 
     private String toDo = "сворачивается в клубочек";
-    private String food = " молоко и рыбку.";
+    private String food = " молоко и рыбку, а еще сметану";
     private String location = "теплый, уютный дом";
 
     public Cat(String name, String say, int age, String typeOfAnimals, String food, String location) {
@@ -132,5 +132,11 @@ public class Cat extends Animal {
     public void makeNoise() {
         super.makeNoise();
         System.out.println(getTypeOfAnimals()+" "+getName()+" очень вежливо говорит "+getSay()+" и "+ getToDo());
+    }
+
+    // для приема ветеринара.
+    public void name() {
+        super.name();
+        System.out.print(getTypeOfAnimals()+" "+getName());
     }
 }

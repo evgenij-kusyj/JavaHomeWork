@@ -10,7 +10,7 @@ public class Dog extends Animal {
     private String typeOfAnimals; // = "Собака";
 
     private String height = "80см";
-    private String food = " косточки и мясо.";
+    private String food = " косточки и мясо, а еще (только тсссс, никому не слова) - вкусные новые туфли хозяина";
     private String location = "теплая, уютная будка";
 
 
@@ -125,5 +125,9 @@ public class Dog extends Animal {
         super.makeNoise();
         System.out.println(getTypeOfAnimals()+" "+getName()+", если его разозлить, "+getToDo());
     }
-
+    // для приема ветеринара.
+    public void name() {
+        super.name();
+        System.out.print(getTypeOfAnimals()+" "+getName());
+    }
 }

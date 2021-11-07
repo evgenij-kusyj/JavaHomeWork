@@ -10,7 +10,7 @@ public class Horse extends Animal {
     private String typeOfAnimals; // = "Лошадь";
 
     private String type = "скакун";
-    private String food = "сено и морковку.";
+    private String food = " сено и морковку (и никогда не отказывается от яблок)";
     private String location = "теплый, уютный хлев";
 
 
@@ -127,5 +127,10 @@ public class Horse extends Animal {
     public void makeNoise() {
         super.makeNoise();
         System.out.println(getTypeOfAnimals()+" "+getName()+" произносит "+getSay());
+    }
+    // для приема ветеринара.
+    public void name() {
+        super.name();
+        System.out.print(getTypeOfAnimals()+" "+getName());
     }
 }

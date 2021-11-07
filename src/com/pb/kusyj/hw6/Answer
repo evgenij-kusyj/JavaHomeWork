@@ -1,0 +1,26 @@
+"C:\Program Files\Java\jdk1.8.0_301\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.2.2\lib\idea_rt.jar=54523:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.2.2\bin" -Dfile.encoding=UTF-8 -classpath "C:\Program Files\Java\jdk1.8.0_301\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\rt.jar;C:\Users\Евгений\IdeaProjects\JavaHomeWork\out\production\JavaHomeWork" com.pb.kusyj.hw6.VetClinic
+toString[Кот. Порода:'Спартанец! Тьфу ты, британец я! Ну ладно - нечистокровный...', имя:'Кузя', говорю:'мяу', возраст:3 года, делаю:'сворачивается в клубочек', ем:' молоко и рыбку', среда обитания:'теплый, уютный дом']
+toString[Собака. Имя:'Бастер', говорю:'Гав!', делаю:'грозно рычит', возраст:4 года, рост:'80см', ем:' косточки и мясо', среда обитания'теплая, уютная будка']
+toString[Лошадь. Имя:'Молния', говорю:'Игого и огого!', делаю:'заржал и ударил землю копытом', возраст:2 года, тип:'скакун', ем:' сено и морковку', среда обитания:'теплый, уютный хлев']
+eq 1 2false
+eq 1 3false
+eq 2 3false
+eq all true false true
+hashCode 1: 1004348112
+hashCode 2: -2124533438
+hashCode 3: 506683501
+Говорит. Кот Кузя очень вежливо говорит мяу и сворачивается в клубочек
+Любит есть. Кот Кузя очень любит  молоко и рыбку
+Говорит. Собака Бастер, если его разозлить, грозно рычит
+Любит есть. Собака Бастер очень любит грызть  косточки и мясо
+Говорит. Лошадь Молния произносит Игого и огого!
+Любит есть. Лошадь Молния никогда не откажется покушать  сено и морковку
+ Собака Бастер спит.
+Кот Кузя спит.
+Кот Кузя пришел на прием. Он ест молоко и рыбку, а еще сметану, место обитания: теплый, уютный дом
+Собака Бастер пришел на прием. Он ест косточки и мясо, а еще (только тсссс, никому не слова) - вкусные новые туфли хозяина, место обитания: теплая, уютная будка
+Лошадь Молния пришел на прием. Он ест сено и морковку (и никогда не отказывается от яблок), место обитания: теплый, уютный хлев
+ пришел на прием. Он ест молоко и рыбку, место обитания: теплый, уютный дом
+ пришел на прием. Он ест сено и морковку, место обитания: теплый, уютный хлев
+
+Process finished with exit code 0
