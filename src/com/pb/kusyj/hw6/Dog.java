@@ -5,7 +5,7 @@ import java.util.Objects;
 public class Dog extends Animal {
     private String name;// = "Бастер";
     private String say; // = "Гав!";
-    private String toDo = "сердито залаял";
+    private String toDo = "грозно рычит";
     private int age; // = 4;
     private String typeOfAnimals; // = "Собака";
 
@@ -14,11 +14,13 @@ public class Dog extends Animal {
     private String location = "теплая, уютная будка";
 
 
-    public Dog(String name, String say, int age, String typeOfAnimals) {
+    public Dog(String name, String say, int age, String typeOfAnimals, String food, String location) {
         this.name = name;
         this.say = say;
         this.age = age;
         this.typeOfAnimals=typeOfAnimals;
+        this.food = food;
+        this.location=location;
     }
 
     public Dog() {
@@ -114,4 +116,14 @@ public class Dog extends Animal {
     public void setLocation(String location) {
         this.location = location;
     }
+
+    public void eat() {
+        super.eat();
+        System.out.println(getTypeOfAnimals()+" "+getName()+ " очень любит грызть "+getFood());
+    }
+    public void makeNoise() {
+        super.makeNoise();
+        System.out.println(getTypeOfAnimals()+" "+getName()+", если его разозлить, "+getToDo());
+    }
+
 }

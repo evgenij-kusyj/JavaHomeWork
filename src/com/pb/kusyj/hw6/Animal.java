@@ -21,14 +21,14 @@ public class Animal {
         this.location = location;
     }
 
-    public void makeNoise(String name, String say) {
-        System.out.println(name + " говорит "+ say);
+    public void makeNoise() {
+        System.out.print( "Говорит. ");
     }
-    public void eat(String...name) {
-        System.out.println(name + " любит есть ");
+    public void eat() {
+        System.out.print("Любит есть. ");
     }
-    public void sleep(String Animal[]) {
-        System.out.println(Animal[1] + " спит.");
+    public void sleep() {
+        System.out.println(" Собака Бастер спит.");
 
     }
 

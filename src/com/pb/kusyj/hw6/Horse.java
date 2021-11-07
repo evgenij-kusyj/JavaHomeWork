@@ -15,11 +15,13 @@ public class Horse extends Animal {
 
 
 
-    public Horse(String name, String say, int age, String typeOfAnimals) {
+    public Horse(String name, String say, int age, String typeOfAnimals, String food, String location) {
         this.name = name;
         this.say = say;
         this.age = age;
         this.typeOfAnimals = typeOfAnimals;
+        this.food = food;
+        this.location=location;
     }
     public Horse() {
 
@@ -65,6 +67,13 @@ public class Horse extends Animal {
         this.type = type;
     }
 
+    public String getTypeOfAnimals() {
+        return typeOfAnimals;
+    }
+
+    public void setTypeOfAnimals(String typeOfAnimals) {
+        this.typeOfAnimals = typeOfAnimals;
+    }
 
     @Override
     public String toString() {
@@ -110,5 +119,13 @@ public class Horse extends Animal {
     @Override
     public void setLocation(String location) {
         this.location = location;
+    }
+    public void eat() {
+        super.eat();
+        System.out.println(getTypeOfAnimals()+" "+getName()+ " никогда не откажется покушать "+getFood());
+    }
+    public void makeNoise() {
+        super.makeNoise();
+        System.out.println(getTypeOfAnimals()+" "+getName()+" произносит "+getSay());
     }
 }

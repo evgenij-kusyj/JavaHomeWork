@@ -10,15 +10,17 @@ public class Cat extends Animal {
     private int age;  // = 3;
     private String typeOfAnimals; // = "Кот";
 
-    private String toDo = "свернулся в клубок";
+    private String toDo = "сворачивается в клубочек";
     private String food = " молоко и рыбку.";
     private String location = "теплый, уютный дом";
 
-    public Cat(String name, String say, int age, String typeOfAnimals) {
+    public Cat(String name, String say, int age, String typeOfAnimals, String food, String location) {
         this.name = name;
         this.say = say;
         this.age = age;
         this.typeOfAnimals = typeOfAnimals;
+        this.food = food;
+        this.location=location;
     }
 
     public Cat() {
@@ -119,8 +121,16 @@ public class Cat extends Animal {
         this.location = location;
     }
 
-    public void sleep(String... getTypeOfAnimals) {
-
-        System.out.println(getTypeOfAnimals[0] + " спит.");
+    public void sleep() {
+        super.sleep();
+        System.out.println(getTypeOfAnimals() +" "+ getName() + " спит.");
+    }
+    public void eat() {
+        super.eat();
+        System.out.println(getTypeOfAnimals()+" "+getName()+ " очень любит "+getFood());
+    }
+    public void makeNoise() {
+        super.makeNoise();
+        System.out.println(getTypeOfAnimals()+" "+getName()+" очень вежливо говорит "+getSay()+" и "+ getToDo());
     }
 }
