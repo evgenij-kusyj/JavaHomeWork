@@ -10,7 +10,7 @@ public class VetClinic {
         animals[1] = new Dog("Бастер", "Гав!", 4, "Собака", " косточки и мясо", "теплая, уютная будка");
         animals[2] = new Horse("Молния", "Игого и огого!", 2, "Лошадь", " сено и морковку", "теплый, уютный хлев");
 
-        System.out.println("toString" + animals[0]); // если не переопределить метод, выведет "hashCode 2: 961"
+        System.out.println("toString" + animals[0]);
         System.out.println("toString" + animals[1]);
         System.out.println("toString" + animals[2]);
 
@@ -19,7 +19,7 @@ public class VetClinic {
         System.out.println("eq 2 3" + animals[1].equals(animals[2]));
         System.out.println("eq all " + animals[0].equals(animals[0]) + " " + animals[1].equals(animals[2]) + " " + animals[2].equals(animals[2]));
 
-        System.out.println("hashCode 1: " + animals[0].hashCode());
+        System.out.println("hashCode 1: " + animals[0].hashCode());// если не переопределить метод, выведет "hashCode 1/2/3: 961"
         System.out.println("hashCode 2: " + animals[1].hashCode());
         System.out.println("hashCode 3: " + animals[2].hashCode());
 
