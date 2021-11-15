@@ -16,11 +16,11 @@ public enum Size {
     }
 
     public static void description() {
-        System.out.println(Size.XXS.getDescription()+", "+Size.XS.getDescription()+", "+Size.S.getDescription()+
+        System.out.println("description - "+Size.XXS.getDescription()+", "+Size.XS.getDescription()+", "+Size.S.getDescription()+
                 ", "+Size.M.getDescription()+", "+Size.L.getDescription());
     }
     public static void euroSize() {
-        System.out.println(Size.XXS.getEuroSize()+", "+Size.XS.getEuroSize()+", "+Size.S.getEuroSize()+
+        System.out.println("euroSize - "+Size.XXS.getEuroSize()+", "+Size.XS.getEuroSize()+", "+Size.S.getEuroSize()+
                 ", "+Size.M.getEuroSize()+", "+Size.L.getEuroSize());
     }
 

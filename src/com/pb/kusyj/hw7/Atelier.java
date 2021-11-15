@@ -10,6 +10,8 @@ public class Atelier {
         Clothes skirt = new Skirt("Юбка", Size.S, "черный", 130.5f);
         Clothes[] clothes = {pants, tshirt1, tshirt2, tie, skirt};
 
+        System.out.println("Определение рода одежды вне методов dressWomen и dressMan с использованием оператора instanceof.");
+
         // проверяем галстук (мужская одежда):
         if  (tie instanceof WomenClothes&&Size.L.euroSize<=32) {
             System.out.print("это детская одежда");
@@ -76,26 +78,30 @@ public class Atelier {
   //      System.out.println(size2.ordinal()); // получение индекса енам
  //       System.out.println(size1.name());// получение название енам
 
-        System.out.println(size1.getDescription()+", "+size2.getDescription()+", "+size3.getDescription()+
+        System.out.println("\n"+ "Конструктор, принимающий на вход description и euroSize.");
+        System.out.println("description: "+size1.getDescription()+", "+size2.getDescription()+", "+size3.getDescription()+
                 ", "+size4.getDescription()+", "+size5.getDescription());   // метод getDescription
-        System.out.println(size1.getEuroSize()+", "+size2.getEuroSize()+", "+size3.getEuroSize()+
+        System.out.println("euroSizes: "+size1.getEuroSize()+", "+size2.getEuroSize()+", "+size3.getEuroSize()+
                 ", "+size4.getEuroSize()+", "+size5.getEuroSize());         // метод getEuroSize
-        System.out.println(" ");
         Size.description(); // метод  description()
         Size.euroSize();    // метод euroSize()
 
 //      вывод информации по всем видам одежды
+        System.out.println("\n"+"Информация об одежде: ");
         pants.dressMan();           pants.dressWomen();
         tshirt1.dressMan();         tshirt1.dressWomen();
         tshirt2.dressMan();         tshirt2.dressWomen();
         tie.dressMan();             tie.dressWomen();
         skirt.dressMan();           skirt.dressWomen();
+
+        dressMan(clothes);
+        dressWomen(clothes);
     }
 
     // информация о мужской и женской одежде:
 
     static void dressMan(Clothes[] clothes) {
-        System.out.println("Мужская одежда: ");
+        System.out.println("\n"+"Мужская одежда: ");
         for (Clothes clothe : clothes) {
             if (clothe instanceof Tie) {
                 System.out.println("Тип одежды: " + clothe.typeOfClothing + ", размер: " + Size.L.getEuroSize() +
@@ -115,7 +121,7 @@ public class Atelier {
         }
     }
     static void dressWomen(Clothes[] clothes) {
-            System.out.println("Женская одежда: ");
+            System.out.println("\n"+"Женская одежда: ");
             for (Clothes clothe: clothes) {
                 if (clothe instanceof Skirt) {
                     System.out.println("Тип одежды: "+clothe.typeOfClothing+ ", размер: "+Size.S.getEuroSize()+
