@@ -73,6 +73,8 @@ public class Atelier {
         Size size3 = Size.S;
         Size size4 = Size.M;
         Size size5 = Size.L;
+  //      System.out.println(size2.ordinal()); // получение индекса енам
+ //       System.out.println(size1.name());// получение название енам
 
         System.out.println(size1.getDescription()+", "+size2.getDescription()+", "+size3.getDescription()+
                 ", "+size4.getDescription()+", "+size5.getDescription());   // метод getDescription
@@ -88,19 +90,49 @@ public class Atelier {
         tshirt2.dressMan();         tshirt2.dressWomen();
         tie.dressMan();             tie.dressWomen();
         skirt.dressMan();           skirt.dressWomen();
-
-        dressMan(clothes);
-        dressWomen(clothes);
     }
-    private static void dressMan(Clothes[] clothes){
-    //   if  (tie instanceof WomenClothes);
-       System.out.println();
+
+    // информация о мужской и женской одежде:
+
+    static void dressMan(Clothes[] clothes) {
+        System.out.println("Мужская одежда: ");
+        for (Clothes clothe : clothes) {
+            if (clothe instanceof Tie) {
+                System.out.println("Тип одежды: " + clothe.typeOfClothing + ", размер: " + Size.L.getEuroSize() +
+                        " (" + Size.L.getDescription() + ", " + Size.L + "), " + "цвет: " + clothe.getColour()
+                        + ", цена: " + clothe.getPrice() + "грн.");
+            }
+            if (clothe instanceof Pants) {
+                System.out.println("Тип одежды: " + clothe.typeOfClothing + ", размер: " + Size.XXS.getEuroSize() +
+                        " (" + Size.XXS.getDescription() + ", " + Size.XXS + "), " + "цвет: " + clothe.getColour()
+                        + ", цена: " + clothe.getPrice() + "грн.");
+            }
+            if (clothe instanceof Tshirt) {
+                System.out.println("Тип одежды: " + clothe.typeOfClothing + ", размер: " + Size.M.getEuroSize() +
+                        " (" + Size.M.getDescription() + ", " + Size.M + "), " + "цвет: " + clothe.getColour()
+                        + ", цена: " + clothe.getPrice() + "грн.");
+            }
+        }
     }
     static void dressWomen(Clothes[] clothes) {
+            System.out.println("Женская одежда: ");
+            for (Clothes clothe: clothes) {
+                if (clothe instanceof Skirt) {
+                    System.out.println("Тип одежды: "+clothe.typeOfClothing+ ", размер: "+Size.S.getEuroSize()+
+                            " ("+Size.S.getDescription()+", "+Size.S+"), "+ "цвет: "+ clothe.getColour()
+                            + ", цена: "+ clothe.getPrice()+"грн.");
+                }
+                if (clothe instanceof Tshirt) {
+                    System.out.println("Тип одежды: " + clothe.typeOfClothing + ", размер: " + Size.XS.getEuroSize() +
+                            " (" + Size.XS.getDescription() + ", " + Size.XS + "), " + "цвет: " + clothe.getColour()
+                            + ", цена: " + clothe.getPrice() + "грн.");
+                }
+            }
+        }
 
     }
 
-}
+
 
 /*
     Создать класс Atelier с методом main, и еще двумя статическими методами:
