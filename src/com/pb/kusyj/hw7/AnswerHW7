@@ -1,0 +1,23 @@
+"C:\Program Files\Java\jdk1.8.0_301\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.2.2\lib\idea_rt.jar=56261:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2021.2.2\bin" -Dfile.encoding=UTF-8 -classpath "C:\Program Files\Java\jdk1.8.0_301\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_301\jre\lib\rt.jar;C:\Users\Евгений\IdeaProjects\JavaHomeWork\out\production\JavaHomeWork" com.pb.kusyj.hw7.Atelier
+Мужская одежда: Тип одежды: Галстук, размер: 40 (взрослый размер, L), цвет: синий, цена: 80.0грн.
+Мужская одежда: Тип одежды: Футболка, размер: 38 (взрослый размер, M), цвет: красный, цена: 180.0грн.
+Женская одежда: Тип одежды: Футболка, размер: 34 (взрослый размер, XS), цвет: желтый, цена: 150.0грн.
+Это детская одежда: Тип одежды: Брюки, размер: 32 (детский размер, S), цвет: белый, цена: 100.5грн.
+Женская одежда: Тип одежды: Юбка, размер: 36 (взрослый размер, S), цвет: черный, цена: 130.5грн.
+Галстук - женская одежда: false
+Галстук - мужская одежда: true
+детский размер, взрослый размер, взрослый размер, взрослый размер, взрослый размер
+32, 34, 36, 38, 40
+
+детский размер, взрослый размер, взрослый размер, взрослый размер, взрослый размер
+32, 34, 36, 38, 40
+Тип одежды: Брюки, размер: 32 (детский размер, S), цвет: белый, цена: 100.5грн.
+Тип одежды: Футболка, размер: 38 (взрослый размер, M), цвет: красный, цена: 180.0грн.
+Тип одежды: Футболка, размер: 34 (взрослый размер, XS), цвет: красный, цена: 180.0грн.
+Тип одежды: Футболка, размер: 38 (взрослый размер, M), цвет: желтый, цена: 150.0грн.
+Тип одежды: Футболка, размер: 34 (взрослый размер, XS), цвет: желтый, цена: 150.0грн.
+Тип одежды: Галстук, размер: 40 (взрослый размер, L), цвет: синий, цена: 80.0грн.
+Тип одежды: Юбка, размер: 36 (взрослый размер, S), цвет: черный, цена: 130.5грн.
+
+
+Process finished with exit code 0
