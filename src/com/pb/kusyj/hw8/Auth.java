@@ -20,9 +20,9 @@ public class Auth {
         if (!Pattern.matches("\\w[a-zA-Z0-9]{4,20}", login)) {
             throw new WrongLoginException();
         } else if (!Pattern.matches("\\w[a-zA-Z0-9_]{4,20}", password)) {
-            throw new WrongPasswordException("Пароль не соответствует требуемым параметрам!");
+            throw new WrongPasswordException("Пароль не соответствует требуемым параметрам!\n");
         } else if (!password.equals(confirmPassword)) {
-            throw new WrongPasswordException("Пароли не совпадают!");
+            throw new WrongPasswordException("Пароли не совпадают!\n");
         } else {
             System.out.println("Регистрация прошла успешно!");
             System.out.println("Сохраняем Ваши данные: логин " + this.login + ", пароль " + this.password);
